@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Decision & Research Skills — Tommy Ng</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="site-name">Tommy <span>Ng</span></a>
+    <ul class="nav-links">
+      <li><a href="/product-sense/">Product Sense</a></li>
+      <li><a href="/pm-skills/" class="active">PM Skills</a></li>
+      <li><a href="https://www.linkedin.com/in/tommy-ngn/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-label">3 Skills &middot; Drop-in AI</div>
+    <h1>AI Decision <span class="accent">& Research Skills</span></h1>
+    <p class="subtitle">
+      Structured thinking skills you can drop into Claude, ChatGPT, or any AI platform. They turn "I asked the AI and it said..." into "Here's the analysis, scored against weighted criteria, with risks and mitigations."
+    </p>
+  </div>
+
+  <h2>The Problem These Solve</h2>
+  <p>
+    Founders make expensive bets they can't defend when the board asks "what else did you consider?" PMs default to the first plausible option, ship it, then discover the edge cases 30 minutes of structured thinking would have caught. Engineers build features where nobody can explain why this approach over the three alternatives. And when decisions do get made, nobody can reconstruct <em>why</em> six months later.
+  </p>
+  <p>
+    The pattern is always the same: jump to options before defining what matters, evaluate with gut feel instead of criteria, and confuse "I researched it" with "I read one article and formed an opinion."
+  </p>
+
+  <h2>The Skills</h2>
+
+  <div class="card-grid">
+
+    <a href="/pm-skills/1-3-1-analysis/" class="card">
+      <div class="card-label">Decision Framework</div>
+      <div class="card-title">1-3-1 Analysis</div>
+      <div class="card-desc">
+        1 precisely framed problem → weighted criteria → 3 approaches scored per criterion → 1 recommendation. The fast, decisive version. Use when three options span the decision space and you need one clear call.
+      </div>
+    </a>
+
+    <a href="/pm-skills/1-5-x-analysis/" class="card">
+      <div class="card-label">Decision Framework</div>
+      <div class="card-title">1-5-X Analysis</div>
+      <div class="card-desc">
+        The exhaustive version. 5+ approaches, 4-7 criteria, top 3 recommendations. Use for complex decisions with multiple stakeholders, competing priorities, or high-stakes irreversible choices.
+      </div>
+    </a>
+
+    <a href="/pm-skills/deep-research/" class="card">
+      <div class="card-label">Research Methodology</div>
+      <div class="card-title">Deep Research</div>
+      <div class="card-desc">
+        Six-phase research with source credibility tiers calibrated to topic maturity, cross-verification of key claims, and honest uncertainty. Turns AI from "search and summarize" into a structured research process.
+      </div>
+    </a>
+
+  </div>
+
+  <h2>Without vs. With</h2>
+
+  <h3>Deciding: "Should we build or buy our analytics pipeline?"</h3>
+
+  <h4>Without the skill</h4>
+  <blockquote>
+    "I think we should buy. Building takes too long and we need it for Q3. Amplitude would work — I've used it before and it's solid."
+  </blockquote>
+  <p>
+    One option considered. No criteria defined. No trade-offs evaluated. The decision is anchored to personal familiarity, not the team's actual constraints.
+  </p>
+
+  <h4>With 1-3-1</h4>
+  <blockquote>
+    <strong>Problem frame:</strong> Core tension is speed vs. control. 4-person data team needs production analytics by Q3, but custom event taxonomies are required. Budget $200K. Hidden decision: is analytics a commodity or a differentiator?<br><br>
+    <strong>Criteria locked before options:</strong> Custom taxonomy support (30%), time to production (25%), 2-year TCO (20%), team maintainability (15%), migration optionality (10%).<br><br>
+    <strong>Recommendation:</strong> Hybrid — buy Amplitude for standard analytics (ships in 2 weeks), build thin custom event layer on the data warehouse (ships in 8 weeks). Meets Q3 deadline, handles custom taxonomies, preserves migration optionality.
+  </blockquote>
+  <p>
+    Same question. Criteria before options. Three distinct paths evaluated. The recommendation explains <em>why</em> and holds up six months later.
+  </p>
+
+  <h3>Researching: "Research MCP protocol for our internal tools"</h3>
+
+  <h4>Without the skill</h4>
+  <blockquote>
+    "MCP is an open standard by Anthropic for connecting AI to external tools. It's gaining adoption. Seems solid, we should probably build on it."
+  </blockquote>
+  <p>
+    One source. No credibility assessment. No competing approaches evaluated. The conclusion is supported by the absence of negative information — which was never searched for.
+  </p>
+
+  <h4>With Deep Research</h4>
+  <blockquote>
+    <strong>One-line answer:</strong> MCP is production-viable for internal tooling with caveats — stable protocol, early ecosystem, significant gaps in auth, observability, and multi-tenant support.<br><br>
+    <strong>Verification status:</strong> 3 of 5 key claims verified by independent sources. 1 contradicted (initial blog overstated connector count). 1 unverifiable (latency claim, single source).<br><br>
+    <strong>Competing approaches:</strong> OpenAI function calling and LangChain solve similar problems — MCP is more standardized but less flexible.
+  </blockquote>
+  <p>
+    Six dimensions mapped. Sources assessed by credibility tier. Key claims cross-verified. Gaps stated honestly.
+  </p>
+
+  <h2>Installation</h2>
+
+  <h3>Claude Projects (claude.ai)</h3>
+  <ol>
+    <li>Create or open a Project</li>
+    <li>Go to Project Knowledge</li>
+    <li>Upload the <code>SKILL.md</code> file from each skill folder</li>
+  </ol>
+
+  <h3>Claude Code / Cowork</h3>
+  <pre><code>git clone https://github.com/tommy-ngn/tommy-ngn.github.io.git
+cp -r tommy-ngn.github.io/pm-skills/1-3-1-analysis ~/.claude/skills/
+cp -r tommy-ngn.github.io/pm-skills/1-5-x-analysis ~/.claude/skills/
+cp -r tommy-ngn.github.io/pm-skills/deep-research ~/.claude/skills/</code></pre>
+
+  <h3>Other Platforms (Cursor, ChatGPT, Codex)</h3>
+  <p>
+    Each skill is a self-contained <code>SKILL.md</code> — a structured methodology any AI platform with tool access can follow. Add the content to your system prompt or project context.
+  </p>
+
+</div>
+
+<footer>
+  <div class="page">
+    <p class="cta">I share how I use these skills in real PM work on <a href="https://www.linkedin.com/in/tommy-ngn/" target="_blank">LinkedIn</a>. Follow for breakdowns.</p>
+    <p class="credit">Built by Tommy Ng &middot; Lead PM &middot; MIT License</p>
+  </div>
+</footer>
+
+</body>
+</html>
