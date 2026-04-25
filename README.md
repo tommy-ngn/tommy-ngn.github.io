@@ -54,7 +54,7 @@ Pull requests accepted for: typo fixes, broken link fixes, translation contribut
 
 **Tommy Ng** — Lead PM building AI-native workflows for product teams.
 
-- [LinkedIn](https://www.linkedin.com/in/tommy-ngn/)
+- [LinkedIn](https://www.linkedin.com/in/tommyngn/)
 - [Site](https://tommy-ngn.github.io)
 
 ## License
