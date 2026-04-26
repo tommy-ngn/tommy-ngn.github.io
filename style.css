@@ -330,24 +330,63 @@ pre code {
   font-weight: 700;
 }
 
+/* ---- End-of-Content CTA ---- */
+
+.content-cta {
+  margin-top: 64px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-surface);
+  text-align: center;
+}
+
+.content-cta p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.content-cta p:last-child {
+  margin-bottom: 0;
+}
+
+.content-cta .cta-link {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--gold-dim);
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.content-cta .cta-link:hover {
+  background: rgba(232, 168, 56, 0.25);
+  text-decoration: none;
+}
+
 /* ---- Footer ---- */
 
 footer {
-  margin-top: 80px;
-  padding: 40px 0;
-  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding: 32px 0;
   text-align: center;
 }
 
 footer .cta {
-  font-size: 15px;
-  color: var(--text-secondary);
-  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 0;
 }
 
 footer .cta a {
   color: var(--gold);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer .credit {
